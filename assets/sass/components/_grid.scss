@@ -1,0 +1,42 @@
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 6em);
+    grid-template-rows: repeat(2, 6em);
+    grid-column-gap: 1vw;
+    text-align: center;
+    justify-content: center;
+    @media only screen and (min-width: 370px){
+        grid-template-columns: repeat(3, 7em);
+        grid-template-rows: repeat(2,7em);
+        grid-column-gap: 3vw;
+    }
+    @media only screen and (min-width:450px){
+        grid-template-columns: repeat(3, 8em)
+    }
+    @media only screen and (min-width: 550px){
+        grid-template-columns: repeat(3, 10em) 
+    }
+    section{
+        display: grid;
+        grid-template-rows: 30px 1fr;
+        grid-template-areas: "title"
+                             "value";
+        h3{
+            border: 2px solid $text-color;
+            border-radius: 5px;
+            background: transparent;
+            text-transform: uppercase;
+            grid-area: title;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        p{
+            grid-area: value;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }   
+}

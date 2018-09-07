@@ -1,0 +1,76 @@
+body{
+    text-align: center;
+    background: $primary-color;
+    nav{
+        float: right;
+        height: 35px;
+    }
+    header{
+        margin: 35px auto;
+    }
+    main{
+        .weatherIcon_background{
+            position: relative;
+            height: 250px;
+            width: 250px;
+            margin: 0 auto;
+            border: 4px solid #a77509;
+        }
+        .weatherIcon_background:before{
+            position: absolute;
+            content: "";
+            height: 242px;
+            width: 242px;
+            left: 0;
+            background: transparent;
+            border: 4px solid #c78b0b;
+        }
+        #location{
+            display: none;
+            position: absolute;  
+            height: 234px;
+            width: 234px;
+            top: 4px;
+            left: 4px;
+            margin: 0 auto;
+            background: $secondary-color;            
+            &.active{
+                display: block;
+            }
+            label{
+                font-size: 1.5em;
+                margin-top: 30px;
+                display: block;
+            }
+            input{
+                background: $primary-color;
+                color: $text-color;
+                border: 2px solid $text-color;
+                border-radius: 5px;
+                display: block;
+                text-align: center;
+                padding: 0.5em;
+                margin: 30px auto;
+                font-size: 1em;
+                outline: none;
+            }
+            :nth-child(3){
+                font-size: 1.2em;
+                &:active{
+                    background: darken($primary-color, 10%);
+                }
+            }
+
+        }
+        .weatherDescription{
+            @extend header;
+        }
+    }
+}
+
+
+
+
+
+
+

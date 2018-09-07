@@ -1,0 +1,12 @@
+@mixin box-sizing($value){
+    -webkit-box-sizing: $value;
+       -moz-box-sizing: $value;
+            box-sizing: $value;
+}
+
+@mixin transform($value){
+    -webkit-transform: $value;
+       -moz-transform: $value;
+         -o-transform: $value;
+            transform: $value;
+}

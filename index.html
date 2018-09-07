@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather</title>
+    <link href="./assets/sass/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>   
+    <nav> 
+    <!--Hamburger for location modal toggling-->
+    <a href="#!"  id="menu-toggle" class=""><span></span></a>
+    </nav>
+    <!--Header-->
+    <header>
+        <h1>Where Am I</h1>
+    </header>
+    <!--Weather icon-->
+    <main>
+      <div class="weatherIcon_background">
+          <div class="weatherIcon wind"></div>
+      <!--Location modal-->
+      <div id="location" class="">
+            <label for="location-input">Enter location</label>
+            <input type="text" id="location-input">
+            <input type="submit" id="location-submit">
+      </div>        
+        </div>      
+      <section class="weatherDescription">
+          <h2>weather</h2>
+      </section>
+      <!--Weather info board-->
+      <div class="container">
+          <section id="sunrise">
+              <h3>sunrise</h3>
+              <p>local sunrise</p>
+          </section>
+          <section id="sunset">
+              <h3>sunset</h3>
+              <p>local sunset</p>
+          </section>
+          <section id="temp">
+              <h3>temperature</h3>
+              <p>Current temperature</p>
+          </section>
+          <section id="humidity">
+              <h3>humidity</h3>
+              <p>Current Humidity</p>
+          </section>
+          <section id="aqi">
+              <h3>pm2.5</h3>
+              <p>microgram per cubic meter</p>
+          </section>
+          <section id="wind">
+              <h3>wind</h3>
+              <p>wind speed</p>
+          </section>   
+      </div>
+    </main>
+    <script src="../config.js"></script>
+    <script src="weather.js"></script>
+</body>
+</html>
